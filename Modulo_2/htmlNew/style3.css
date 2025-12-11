@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    margin: 100px 
+}
+
+.banner{
+    position: relative;
+    width: 1920px;
+    
+    
+}
+.header2{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    justify-content: space-between;
+    width: 1620px;
+}
+
+.img2{
+margin-left: 20px;
+margin-top: 20px;
+
+
+}
+
+h1{
+    color: aliceblue;
+    align-items: center;
+}
+
+.navbar{
+display: flex;
+gap:10px;
+
+
+
+}
+
+.link{
+    color:aliceblue;
+
+}
+

@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    flex-wrap: row;
+    background-color: blue;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+nav{
+   padding-right: 20px;
+   color: white;
+   
+
+}
