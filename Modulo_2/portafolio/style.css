@@ -64,6 +64,7 @@ a{
 .link:hover{
     pointer-events: fill;
     transform: scale(1.05);
+    background-color: aqua;
 }
 
 main{
@@ -129,6 +130,7 @@ button{
 
 button:hover{
     transform: scale(1.05);
+    background-color: aqua;
     
 }
 
@@ -150,7 +152,6 @@ button:hover{
     padding: 15px;
     height: 650px;
     border: 1px solid rgb(247, 0, 0);
-
     
 }
 .section3{
@@ -199,3 +200,241 @@ h3{
     text-align: center;
     color: white;
 }
+
+/* Smartphones (menos de 600px) */
+@media (max-width: 599px) {
+    body {
+        margin: 10px 15px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+
+    .link {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 10px;
+    }
+
+    .section1 {
+        grid-template-rows: auto auto;
+        gap: 5px;
+    }
+
+    .section2 {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button, .haciamascotas {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .main2 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .section3, .section4 {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .imgtodos, .section4 img {
+        height: auto;
+        width: 90%;
+    }
+
+    footer {
+        height: auto;
+        grid-template-rows: repeat(3, auto);
+        padding: 5px 0;
+    }
+
+    li {
+        font-size: 18px;
+    }
+}
+
+/* Tablets (600px a 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    body {
+        margin: 10px 40px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr;
+        margin-right: 0;
+    }
+
+    .link {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr; /* columna única para evitar solapamiento */
+        gap: 20px;
+        height: auto; /* permite que crezca según contenido */
+        padding: 10px;
+    }
+
+    .section1 {
+        grid-template-rows: auto auto; /* permite ajustar altura al contenido */
+        gap: 10px;
+        text-align: center;
+    }
+
+    .section2 {
+        height: auto; /* evita que se solape con otras secciones */
+        margin-top: 10px;
+    }
+
+    .main2 {
+        height: auto;
+        padding: 10px;
+    }
+
+    .section3, .section4 {
+        flex-direction: column; /* imágenes en columna para no solaparse */
+        gap: 15px;
+        height: auto; /* ajusta según contenido */
+    }
+
+    .imgtodos, .section4 img {
+        max-width: 100%; /* que nunca sobrepase el contenedor */
+        height: auto; /* mantiene proporción */
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button, .haciamascotas {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    footer {
+        height: auto; /* evita solapamiento */
+        grid-template-rows: repeat(3, auto);
+        padding: 10px 0;
+        margin-top: 20px; /* separa del contenido anterior */
+    }
+
+    /* Corrección de textos solapados */
+    .sobre-mi {
+        margin-bottom: 20px; /* agrega espacio antes de la sección de proyectos */
+    }
+}
+
+/* Desktops (900px en adelante) */
+@media (min-width: 900px) {
+    body {
+        margin: 10px 80px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    main {
+        grid-template-columns: 3fr 1fr;
+        height: 650px;
+    }
+
+    .section2 {
+        height: 650px;
+    }
+
+    input {
+        width: 350px;
+    }
+
+    button, .haciamascotas {
+        width: 120px;
+        font-size: 20px;
+    }
+
+      .haciamascotas {
+        width: 120px;
+        font-size: 30px;
+    }
+
+    .section3, .section4 {
+        flex-direction: row;
+    }
+
+    .imgtodos{
+        height: auto;
+    }
+
+      .section4 img {
+        height: 250px;
+    }
+}
+
