@@ -11,12 +11,13 @@ header{
     background-color: rgb(247 181 0);
     border-radius: 10px;
     padding: 15px;
-    border: 1px solid rgb(247, 0, 0);
+    border: 2px solid rgb(247, 0, 0);
     height: 110px;
 }
 h1{
     font-size: 50px;
     color: white;
+    
 }
 
 h2{
@@ -76,13 +77,13 @@ main{
     border-radius: 20px;
     padding: 15px;
     height: 650px;
-    border: 1px solid rgb(247, 0, 0);
+    border: 2px solid rgb(247, 0, 0);
     justify-items: center;
 }
 
 .section1{
     display: grid;
-    grid-template-rows: 250px 150px;
+    grid-template-rows: 350px 250px;
     gap: 10px;
     text-align: center;
 }
@@ -151,7 +152,7 @@ button:hover{
     border-radius: 20px;
     padding: 15px;
     height: 650px;
-    border: 1px solid rgb(247, 0, 0);
+    border: 2px solid rgb(247, 0, 0);
     
 }
 .section3{
@@ -187,7 +188,7 @@ footer{
     display: grid;
     grid-template-rows: 30px 30px 30px;
     border-radius: 10px;
-    border: 1px solid rgb(247, 0, 0);
+    border: 2px solid rgb(247, 0, 0);
     height: 90px;
     justify-content: center;
     align-items: center;
