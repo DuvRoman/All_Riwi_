@@ -1,0 +1,48 @@
+
+
+
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    background-color: #00ff88;
+    border: 2.5px solid #6bb39b;
+    border-radius: 20px;
+    padding: 0px 20px 0px 20px;
+    margin: 20px;
+}
+
+
+
+h1{
+    color: #f7f4e8 ;
+    text-decoration: underline 3px solid #6bb39b;
+    font-size: 50px
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 200px 200px 210px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #f7f4e8 ;
+    background-color: #6bb39b /*#f7f4e8*/;
+    text-align: center;
+    border-radius: 10px;
+    height: 30px;
+    text-decoration: none;
+    border: 1px solid #f7f4e8 ;
+}
+
+a:hover{
+ background-color:#f7f4e8 ;
+ color: #6bb39b ;
+}
