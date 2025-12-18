@@ -1,0 +1,274 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+.header_banner {
+    width: 100%;
+    min-height: 80vh;
+    /* Gradiente sobre la imagen de fondo */
+    background: linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%)), 
+                url("./assets/bg-pattern-intro-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 100px; /* Curva característica del diseño */
+    color: white;
+    padding: 40px 80px;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav_links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav_links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    font-weight: 700;
+}
+
+.btn_login {
+    background: transparent;
+    color: white;
+    margin-right: 20px;
+}
+
+.btn_signup, .btn_white {
+    background-color: white;
+    color: hsl(353, 100%, 62%);
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn_signup:hover, .btn_white:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn_outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+}
+
+/* Contenido Hero */
+.hero_content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hero_content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero_content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero_cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos Sección Features */
+.features_section {
+    padding: 100px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.section_title {
+    color: hsl(208, 49%, 24%);
+    font-size: 2.5rem;
+    margin-bottom: 80px;
+}
+
+.features_container {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.features_text {
+    flex: 1;
+    text-align: left;
+}
+
+.feature_item h3 {
+    color: hsl(208, 49%, 24%);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.feature_item p {
+    color: hsl(207, 13%, 34%);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.features_image {
+    flex: 1;
+    transform: translateX(100px); /* Para que la imagen se salga un poco como en el diseño */
+}
+
+/* Sección Oscura (State of the Art) */
+.state_art_section {
+    background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: flex;
+    align-items: center;
+    height: 400px;
+    margin-top: 150px;
+    padding: 0 80px;
+    position: relative;
+}
+
+.phones_image {
+    flex: 1;
+}
+
+.phones_image img {
+    position: absolute;
+    bottom: -50px;
+    width: 450px;
+}
+
+.state_art_content {
+    flex: 1;
+    color: white;
+}
+
+.state_art_content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer_main {
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 100px;
+    padding: 70px 80px;
+    margin-top: 100px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_column h4 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer_column ul {
+    list-style: none;
+}
+
+.footer_column ul li {
+    margin-bottom: 10px;
+}
+
+.footer_column a {
+    color: hsl(240, 2%, 79%);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer_column a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor del dropdown */
+.dropdown {
+    position: relative; /* Para que el menú se posicione respecto a este li */
+}
+
+/* Estilos del menú oculto */
+.dropdown_menu {
+    display: none;             /* Oculto por defecto */
+    position: absolute;
+    top: 100%;                 /* Aparece justo debajo del texto */
+    left: 50%;
+    transform: translateX(-50%); /* Lo centra respecto al texto "Connect" */
+    background-color: white;
+    min-width: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    list-style: none;
+    margin-top: 15px;          /* Espacio para que no esté pegado */
+    z-index: 10;
+}
+
+/* Mostrar el menú al pasar el mouse */
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+/* Estilos de los enlaces dentro del menú desplegable */
+.dropdown_menu li a {
+    color: hsl(208, 49%, 24%) !important; /* Color oscuro para que se lea sobre blanco */
+    padding: 10px 0;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dropdown_menu li a:hover {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Opcional: una pequeña flecha o indicador */
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .arrow {
+    display: inline-block;
+    transform: rotate(180deg); /* La flecha gira al abrir */
+}
