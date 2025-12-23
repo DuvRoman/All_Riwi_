@@ -3,7 +3,7 @@ body{
     font-family: "Outfit", sans-serif;
 
 }
-header{
+.header_1{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +14,53 @@ header{
     border: 2px solid rgb(247, 0, 0);
     height: 110px;
 }
+
+.header_2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(247 181 0);
+    border-radius: 10px;
+    border: 2px solid rgb(247, 0, 0);
+    padding: 15px;
+
+}
+h5{
+    font-size: 25px;
+    color: rgb(247, 0, 0);
+    text-align: center;
+    background-color: rgba(255, 213, 0, 0.906);
+    border-radius: 10px;
+
+}
 h1{
     font-size: 50px;
     color: white;
     
+}
+
+.imgProyecto{
+    display: flex;
+    border-radius: 20px;
+    height: 500px;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sectionImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color:  rgb(247 181 0);
+    margin: 10px 0px 10px 0px;
+    border-radius: 20px;
+    padding: 15px;
+    height: 650px;
+    border: 2px solid rgb(247, 0, 0);
+    justify-items: center;
 }
 
 h2{
@@ -201,6 +244,8 @@ h3{
     text-align: center;
     color: white;
 }
+
+
 
 /* Smartphones (menos de 600px) */
 @media (max-width: 599px) {
