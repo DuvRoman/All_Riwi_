@@ -43,11 +43,11 @@ h1{
 .imgProyecto{
     display: flex;
     border-radius: 20px;
-    height: 500px;
+    max-width:100%;
+    height: auto;
     display: block;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 .sectionImg{
     display: flex;
@@ -58,9 +58,10 @@ h1{
     margin: 10px 0px 10px 0px;
     border-radius: 20px;
     padding: 15px;
-    height: 650px;
+    min-height: 650px;
     border: 2px solid rgb(247, 0, 0);
     justify-items: center;
+    overflow: hidden;
 }
 
 h2{
