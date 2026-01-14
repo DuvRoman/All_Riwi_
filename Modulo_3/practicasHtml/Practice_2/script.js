@@ -1,19 +1,22 @@
-const boton= document.getElementById("myBoton");
-const caja= document.getElementById("caja");
+import {getWeather}   from "./weather.js";
 
-let contador= 0
 
-boton.addEventListener('click', () =>{
-   console.log("boton presionado");
-   contador ++
-   caja.innerHTML = `<h2> boton presionado ${contador} <h2/> `
+const boton= document.getElementById("button");
+const input= document.getElementById("input");
+const content= document.getElementById("contenedor");
+
+
+
+
+boton.addEventListener('click', async () => {
+    const data = await getWeather(input.value);
+    
+    if (data && data.main) {
+        content.innerHTML = `${data.main.temp}°C`;
+    } else {
+        content.innerHTML = "Ciudad no encontrada";
+    }
 });
 
-let lista = [ usuario1 = {
-        "libro" : "Harry potter" ,
-        "calificación" : "4.5"
-    },
-    usuario2={
-        "libro" : "Spiderman" ,
-        "calificación" : "5"
-} ]
+
+
