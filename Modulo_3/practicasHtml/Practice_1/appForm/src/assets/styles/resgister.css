@@ -1,0 +1,23 @@
+
+.register-section-1{
+    width: 90%;          
+    max-width: 1200px;   
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+
+.resgister-article-1{
+    display: flex;
+    flex-direction: column;
+    gap:10px; 
+}
+
+input{
+    border-radius: 10px;
+}

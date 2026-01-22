@@ -22,3 +22,4 @@ export async function getWeather(city) {
 
 
 
+// vcomo hago para vincular un spa en vite con peticion fetch, con un navbar en una pagina principal que me cambie el contenido despues de darle click a un link del navbar

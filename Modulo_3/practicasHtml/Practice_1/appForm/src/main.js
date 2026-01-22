@@ -1,24 +1,39 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+const username = document.getElementById('name')
+const lastname = document.getElementById('lastname')
+const email = document.getElementById('email')
+const password = document.getElementById('password')
+const btn = document.getElementById('buttonR')
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+const userData = [{
+  
+  userName : "",
+  lastName : "",
+  userEmail: "",
+  userPassword: ""
+
+}];
+
+
+
+username.addEventListener('inpunt', (e)=> {
+  userData.userName = e.target.value;
+  console.log(userData.userName)
+})
+lastname.addEventListener('inpunt', (e)=> {
+   lastName= e.target.value;
+})
+userEmail.addEventListener('inpunt', (e)=> {
+   userEmail= e.target.value;
+})
+userPassword.addEventListener('inpunt', (e)=> {
+   userPassword= e.target.value;
+})
+
+btn.addEventListener('click', ()=>{
+  localStorage.setItem('name', userName)
+  
+})
+
+document.querySelector('#app').innerHTML = 
 
 setupCounter(document.querySelector('#counter'))
