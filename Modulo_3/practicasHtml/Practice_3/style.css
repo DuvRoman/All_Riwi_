@@ -148,3 +148,25 @@ ul{
     font-weight: bold;
     text-decoration: underline;
 }
+
+.edit{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 20px;
+    gap: 10px;
+
+}
+
+.article_edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn_editor{
+    height: 25px;
+    text-align: center;
+    width: 90px;
+}
