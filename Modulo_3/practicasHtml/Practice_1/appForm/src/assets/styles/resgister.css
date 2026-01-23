@@ -1,7 +1,7 @@
 
 .register-section-1{
     width: 90%;          
-    max-width: 1200px;   
+    max-width: 1280px;   
     margin: 0 auto;
     height: auto;
     display: flex;
@@ -19,5 +19,14 @@
 }
 
 input{
+    width: 250px;
+    height: 25px;
     border-radius: 10px;
+    background-color: #535bf2;
+    color: #ffffff;
+    text-align: center;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.747);
+    opacity: 1; /* Importante: Firefox le baja la opacidad por defecto */
 }
