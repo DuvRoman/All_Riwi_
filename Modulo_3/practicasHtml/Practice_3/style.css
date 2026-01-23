@@ -1,0 +1,150 @@
+.section_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 90%;
+    max-height: 1000vh;
+    width: auto;
+    border-radius: 10px;
+}
+
+.section_1_1{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 90%;
+    height: auto;
+    max-width: 1000px;
+    background-color: aqua;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: aliceblue;
+    text-decoration: underline;
+    font-family: monospace;
+    font-size: 37px;
+}
+
+body{
+    background-color: aqua;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: auto;
+}
+
+.article_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 5px;
+    width: 90%;
+    max-width: 1280px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-family: monospace;
+    padding: 20px;
+}
+input{
+    height: 40px;
+    width: 550px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.612);
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+h2{
+    font-size: 10px;
+}
+
+p{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color:rgba(0, 76, 131, 0.564);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    font-size: 15px;
+    font-family: monospace;
+}
+.article_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 1280px;
+    width: 90%;
+    justify-content: space-around;
+    align-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tarea{
+    display: flex;
+    font-family: monospace;
+    border-radius: 20px;
+    height: 15px;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 76, 131, 0.564);
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+    color: rgba(0, 76, 131, 0.818);
+    background-color: aliceblue;
+    font-size: 15px ;
+    margin-bottom: 15px;
+}
+.btn_1{
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    background-color:rgba(0, 76, 131, 0.564);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    font-size: 15px;
+    font-family: monospace;
+    align-items: center;
+}
+.changes{
+    width: 90%;
+    height: 35px;
+    width: 60px;
+    color: aliceblue;
+}
+
+.pendiente{
+    font-size: 15px;
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+    text-decoration: underline;
+}
